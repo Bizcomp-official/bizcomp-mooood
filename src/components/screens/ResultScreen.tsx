@@ -2,12 +2,12 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import type { CharacterResult, CharacterType } from '@/pages/Index';
 
-// Import transparent character SVGs
-import jollyImg from '@/assets/characters/jolly11.png';
-import museImg from '@/assets/characters/muse11.png';
-import serenyImg from '@/assets/characters/seceny11.png';
-import zenImg from '@/assets/characters/zen11.png';
-import champyImg from '@/assets/characters/champy11.png';
+// Import character GIFs
+import jollyImg from '@/assets/characters/Jolly.gif';
+import museImg from '@/assets/characters/Muse.gif';
+import serenyImg from '@/assets/characters/Sereny.gif';
+import zenImg from '@/assets/characters/Zen.gif';
+import champyImg from '@/assets/characters/Champy.gif';
 
 interface ResultScreenProps {
   result: CharacterResult;
