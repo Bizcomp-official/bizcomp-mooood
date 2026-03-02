@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import type { CharacterResult, CharacterType } from '@/pages/Index';
 
 // Import character GIFs
-import jollyImg from '@/assets/characters/Jolly.gif';
-import museImg from '@/assets/characters/Muse.gif';
-import serenyImg from '@/assets/characters/Sereny.gif';
-import zenImg from '@/assets/characters/Zen.gif';
+import jollyImg from '@/assets/characters/Jolly-new.gif';
+import museImg from '@/assets/characters/Muse-new.gif';
+import serenyImg from '@/assets/characters/Sereny-new.gif';
+import zenImg from '@/assets/characters/Zen-new.gif';
 import champyImg from '@/assets/characters/Champy.gif';
 
 interface ResultScreenProps {
