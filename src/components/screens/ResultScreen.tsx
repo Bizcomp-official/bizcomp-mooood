@@ -200,7 +200,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
           >
             {/* Soft aura glow behind character */}
             <motion.div 
-              className="absolute -inset-16 md:-inset-24 rounded-full"
+              className="absolute -inset-32 md:-inset-48 rounded-full"
               style={{ background: styles.auraGlow }}
               animate={{ 
                 scale: [1, 1.1, 1],
@@ -210,7 +210,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
             />
             {/* Secondary aura ring */}
             <motion.div 
-              className="absolute -inset-8 md:-inset-12 rounded-full blur-xl"
+              className="absolute -inset-16 md:-inset-24 rounded-full blur-xl"
               style={{ backgroundColor: styles.auraColor }}
               animate={{ 
                 scale: [1.1, 1, 1.1],
@@ -221,7 +221,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
             <motion.img
               src={characterImage}
               alt={result.characterName}
-              className="relative w-56 h-56 md:w-72 md:h-72 object-contain drop-shadow-2xl"
+              className="relative w-[28rem] h-[28rem] md:w-[36rem] md:h-[36rem] object-contain drop-shadow-2xl"
               animate={{ y: [-5, 5, -5] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
