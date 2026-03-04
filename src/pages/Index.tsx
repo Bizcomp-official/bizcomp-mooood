@@ -24,6 +24,7 @@ export interface CharacterResult {
   traitTh: string;
   description: string;
   productList: string[];
+  drinkName: string;
   emoji: string;
 }
 
@@ -37,6 +38,7 @@ const characterData: Record<CharacterType, CharacterResult> = {
     traitTh: 'พลังบวก สดใส',
     description: 'You light up every room! Your joyful spirit and social energy inspire everyone around you.',
     productList: ['Orange Passionate', 'Tropical Joy', 'Thai Tea Protein Ball'],
+    drinkName: 'Orange passionate x Thai Tea Protein Ball',
     emoji: '⭐',
   },
   creative: {
@@ -48,6 +50,7 @@ const characterData: Record<CharacterType, CharacterResult> = {
     traitTh: 'รักอิสระ สร้างสรรค์',
     description: 'Your imagination knows no bounds! You see beauty and possibilities everywhere.',
     productList: ['Flirty Berry Yolo', 'Beet Boost', 'Cranberry Lemon Protein Ball'],
+    drinkName: 'Flirty Berry Yolo x Cranberry Lemon Protein Ball',
     emoji: '🌸',
   },
   empathetic: {
@@ -59,6 +62,7 @@ const characterData: Record<CharacterType, CharacterResult> = {
     traitTh: 'เป็นห่วงความรู้สึกตัวเองและคนอื่น',
     description: 'You care deeply about yourself and others. Self-care is your superpower!',
     productList: ['Keenly Kaley', 'Avoco Pride', 'Matcha Latte Protein Ball'],
+    drinkName: 'Kale x Matcha Latte Protein Ball',
     emoji: '💚',
   },
   calm: {
@@ -70,6 +74,7 @@ const characterData: Record<CharacterType, CharacterResult> = {
     traitTh: 'เรียบง่าย ชอบรับฟัง',
     description: 'Your calm presence is a gift. You listen deeply and bring peace to any situation.',
     productList: ['Endless Blue Sky', 'Coconut Calm', 'Carrot Cake Protein Ball'],
+    drinkName: 'Endless Blue Sky x Carrot Cake Protein Ball',
     emoji: '🍑',
   },
   achiever: {
@@ -81,6 +86,7 @@ const characterData: Record<CharacterType, CharacterResult> = {
     traitTh: 'มุ่งมั่น ทะเยอทะยาน',
     description: 'Nothing can stop you! Your determination and drive push you toward every goal.',
     productList: ['Gym MOOOOD', 'Dark Chocolate Protein Ball', 'Mocha Protein Ball'],
+    drinkName: 'Gym MOOOOD x Mocha Protein Ball',
     emoji: '💜',
   },
 };

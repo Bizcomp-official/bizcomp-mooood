@@ -17,7 +17,7 @@ import zenDrink from '@/assets/drinks/Zen.png';
 import champyDrink from '@/assets/drinks/Champy.png';
 
 // Import MOOOOD logo
-import moooodLogo from '@/assets/characters/Your paragraph text (5).svg';
+import moooodLogo from '@/assets/characters/mooood-logo.png';
 
 interface ResultScreenProps {
   result: CharacterResult;
@@ -278,7 +278,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
           >
             <div className="text-sm font-display tracking-widest text-foreground/70 uppercase mb-3 flex items-center justify-center gap-2">
               <span>🍃 Your Perfect</span>
-              <img src={moooodLogo} alt="MOOOOD" className="inline-block h-4" />
+              <img src={moooodLogo} alt="MOOOOD" className="inline-block w-32" />
               <span>🍃</span>
             </div>
             <motion.div
@@ -293,6 +293,14 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
                 className="w-full max-w-xs h-auto object-contain rounded-2xl"
               />
             </motion.div>
+            <motion.p
+              className="text-base font-display text-foreground mt-4 font-medium"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.7 }}
+            >
+              {result.drinkName}
+            </motion.p>
           </motion.div>
         </div>
 

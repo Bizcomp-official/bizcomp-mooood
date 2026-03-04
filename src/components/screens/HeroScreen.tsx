@@ -2,13 +2,13 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
 // Import transparent character SVGs
-import moooodLogo from '@/assets/characters/Your paragraph text (5).svg';
+import moooodLogo from '@/assets/characters/mooood-logo.png';
 import jollyImg from '@/assets/characters/jolly11.png';
 import museImg from '@/assets/characters/muse11.png';
 import serenyImg from '@/assets/characters/seceny11.png';
 import zenImg from '@/assets/characters/zen11.png';
 import champyImg from '@/assets/characters/champy11.png';
-import bizcompXMoooodLogo from '@/assets/characters/BizCompXMoood.svg';
+import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
 
 interface HeroScreenProps {
   onStart: () => void;
@@ -169,7 +169,7 @@ const HeroScreen = ({ onStart }: HeroScreenProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-12" />
+            <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-6" />
           </motion.div>
         </header>
 
@@ -184,7 +184,7 @@ const HeroScreen = ({ onStart }: HeroScreenProps) => {
             >
               WHAT'S YOUR
               <br />
-              <img src={moooodLogo} alt="MOOOOD" className="inline-block h-8 md:h-10 lg:h-12 my-2" style={{ maxWidth: '100%', height: 'auto' }} />
+              <img src={moooodLogo} alt="MOOOOD" className="inline-block w-48 md:w-64 lg:w-80 my-2" style={{ maxWidth: '100%', height: 'auto' }} />
               <br />
               TODAY?
             </motion.h1>

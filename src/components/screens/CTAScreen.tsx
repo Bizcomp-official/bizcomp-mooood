@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import bizcompXMoooodLogo from '@/assets/characters/BizCompXMoood.svg';
+import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
 
 const CTAScreen = () => {
   const handleRegister = () => {
     // Open registration link or show registration form
-    window.open('https://forms.gle/bizcomp-registration', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSd63KQU86byUlR0apz7OrY5xsO3j2-D0EyC-wQpe__rfU5HjQ/viewform', '_blank');
   };
 
   return (
@@ -73,13 +73,14 @@ const CTAScreen = () => {
         </motion.div>
 
         <motion.p
-          className="text-lg font-body text-foreground/70 mb-8 max-w-md mx-auto leading-relaxed"
+          className="text-base font-body text-foreground/70 mb-8 max-w-2xl mx-auto leading-relaxed text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Join us for an amazing collaboration event! 
-          Show your result screen at our booth to claim your exclusive reward!
+          RealBiz Exhibition is your chance to experience what real-world business actually looks like. Organized under BizComp, the exhibition showcases the full journey of our project teams: from idea generation and problem definition to solution development and real collaboration with an actual company partner, MOOOOD. This is not just a display of outcomes, but a behind-the-scenes look at how students turn business concepts into tangible results.
+          <br /><br />
+          At the exhibition, you'll get to know BizComp and MOOOOD more deeply, gain practical business insights from real projects, and participate in fun, interactive activities designed to challenge your thinking. If you're a high school or university student curious about entrepreneurship, innovation, or business competitions, this is your opportunity to explore, learn, and imagine yourself as part of the journey.
         </motion.p>
 
         <motion.div
@@ -121,7 +122,7 @@ const CTAScreen = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-16" />
+          <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-8" />
         </motion.div>
       </div>
     </div>
