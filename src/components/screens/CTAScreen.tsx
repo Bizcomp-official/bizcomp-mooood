@@ -138,7 +138,7 @@ const CTAScreen = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-8" />
+          <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-16 md:h-20" />
         </motion.div>
       </div>
     </div>

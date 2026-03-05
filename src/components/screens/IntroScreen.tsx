@@ -74,7 +74,7 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
         <motion.img
           src={jollyImg}
           alt=""
-          className="absolute -top-12 -left-16 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
+          className="absolute top-0 left-4 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0, y: [0, -10, 0] }}
           transition={{ 
@@ -88,7 +88,7 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
         <motion.img
           src={museImg}
           alt=""
-          className="absolute -top-10 -right-16 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
+          className="absolute top-2 right-4 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0, y: [0, -8, 0] }}
           transition={{ 
@@ -102,7 +102,7 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
         <motion.img
           src={serenyImg}
           alt=""
-          className="absolute bottom-16 -left-16 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
+          className="absolute bottom-16 left-4 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0, y: [0, -12, 0] }}
           transition={{ 
@@ -116,7 +116,7 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
         <motion.img
           src={zenImg}
           alt=""
-          className="absolute bottom-20 -right-16 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
+          className="absolute bottom-20 right-4 w-32 md:w-40 lg:w-48 drop-shadow-lg character-transparent"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0, y: [0, -8, 0] }}
           transition={{ 
@@ -130,7 +130,7 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
         <motion.img
           src={champyImg}
           alt=""
-          className="absolute top-1/3 -right-20 w-36 md:w-44 lg:w-52 drop-shadow-lg character-transparent"
+          className="absolute top-1/3 right-2 w-36 md:w-44 lg:w-52 drop-shadow-lg character-transparent"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0, y: [0, -6, 0] }}
           transition={{ 
