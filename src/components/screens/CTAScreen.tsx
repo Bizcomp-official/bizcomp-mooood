@@ -70,6 +70,22 @@ const CTAScreen = () => {
             Taste the
             <span style={{ color: '#e8662a', fontFamily: 'Anton, sans-serif', fontWeight: 400 }}> MOOOOD</span>!
           </h1>
+
+          {/* Event Details */}
+          <div className="mb-8 space-y-2">
+            <p className="text-xl md:text-2xl font-display font-semibold text-foreground">
+              The RealBiz Exhibition
+            </p>
+            <p className="text-xl md:text-3xl font-display tracking-wide text-foreground/90 uppercase font-bold">
+              WHERE <span className="text-char-creative">IDEAS</span> BECOME REAL <span style={{ color: '#e8662a' }}>BUSINESS</span>
+            </p>
+            <p className="text-sm md:text-base font-body text-foreground/80 font-semibold">
+              29 March 2026 from 13:00–17:00 (GMT+7)
+            </p>
+            <p className="text-sm md:text-base font-body text-foreground/80 font-semibold">
+              at Chamchuri 10 Building, 7th Floor, Room 701
+            </p>
+          </div>
         </motion.div>
 
         <motion.p
@@ -78,9 +94,9 @@ const CTAScreen = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          RealBiz Exhibition is your chance to experience what real-world business actually looks like. Organized under BizComp, the exhibition showcases the full journey of our project teams: from idea generation and problem definition to solution development and real collaboration with an actual company partner, MOOOOD. This is not just a display of outcomes, but a behind-the-scenes look at how students turn business concepts into tangible results.
+          <span className="font-bold text-foreground/90">RealBiz Exhibition</span> is your chance to experience what <span className="font-bold text-foreground/90">real-world business</span> actually looks like. Organized under BizComp, the exhibition showcases the <span className="font-bold text-foreground/90">full journey of our project teams</span>: from idea generation and problem definition to solution development and <span className="font-bold text-foreground/90">real collaboration with an actual company partner, MOOOOD</span>. This is not just a display of outcomes, but a <span className="font-bold text-foreground/90">behind-the-scenes look</span> at how students turn business concepts into tangible results.
           <br /><br />
-          At the exhibition, you'll get to know BizComp and MOOOOD more deeply, gain practical business insights from real projects, and participate in fun, interactive activities designed to challenge your thinking. If you're a high school or university student curious about entrepreneurship, innovation, or business competitions, this is your opportunity to explore, learn, and imagine yourself as part of the journey.
+          At the exhibition, you'll get to know BizComp and MOOOOD more deeply, gain <span className="font-bold text-foreground/90">practical business insights</span> from real projects, and participate in <span className="font-bold text-foreground/90">fun, interactive activities</span> designed to challenge your thinking. If you're a high school or university student curious about <span className="font-bold text-foreground/90">entrepreneurship, innovation, or business competitions</span>, this is your opportunity to explore, learn, and imagine yourself as part of the journey.
         </motion.p>
 
         <motion.div
@@ -110,7 +126,7 @@ const CTAScreen = () => {
             </p>
             <p className="text-sm font-body text-foreground/60 leading-relaxed">
               Show your result screen at our booth to get a free 
-              <span className="font-semibold text-foreground/80"> Mooood × BizComp Sticker Pack!</span>
+              <span className="font-semibold text-foreground/80"> Mooood × BizComp Exclusive souvenir!</span>
             </p>
           </motion.div>
         </motion.div>

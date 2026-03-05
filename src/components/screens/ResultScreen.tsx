@@ -165,35 +165,6 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
           animate={{ scale: [1.2, 1, 1.2], rotate: [45, 0, 45] }}
           transition={{ duration: 10, repeat: Infinity }}
         />
-        {/* Sparkles/stars decoration */}
-        <motion.div
-          className="absolute top-[15%] left-[15%] text-4xl"
-          animate={{ rotate: [0, 360], scale: [1, 1.2, 1] }}
-          transition={{ duration: 4, repeat: Infinity }}
-        >
-          ✨
-        </motion.div>
-        <motion.div
-          className="absolute top-[12%] right-[20%] text-3xl"
-          animate={{ rotate: [360, 0], scale: [1, 1.3, 1] }}
-          transition={{ duration: 5, repeat: Infinity, delay: 0.5 }}
-        >
-          ⭐
-        </motion.div>
-        <motion.div
-          className="absolute bottom-[22%] left-[12%] text-3xl"
-          animate={{ y: [-5, 5, -5] }}
-          transition={{ duration: 3, repeat: Infinity }}
-        >
-          💫
-        </motion.div>
-        <motion.div
-          className="absolute bottom-[25%] right-[12%] text-4xl"
-          animate={{ rotate: [0, -360], scale: [1, 1.1, 1] }}
-          transition={{ duration: 6, repeat: Infinity, delay: 1 }}
-        >
-          🌟
-        </motion.div>
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-8 min-h-screen flex flex-col">
@@ -239,7 +210,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
             <motion.img
               src={characterImage}
               alt={result.characterName}
-              className="relative w-80 h-80 md:w-[28rem] md:h-[28rem] object-contain drop-shadow-2xl"
+              className="relative w-80 h-80 md:w-[28rem] md:h-[28rem] object-contain drop-shadow-2xl ml-8 md:ml-12"
               animate={{ y: [-5, 5, -5] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -278,7 +249,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
           >
             <div className="text-sm font-display tracking-widest text-foreground/70 uppercase mb-3 flex items-center justify-center gap-2">
               <span>🍃 Your Perfect</span>
-              <img src={moooodLogo} alt="MOOOOD" className="inline-block w-32" />
+              <img src={moooodLogo} alt="MOOOOD" className="inline-block h-6" />
               <span>🍃</span>
             </div>
             <motion.div
@@ -294,7 +265,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
               />
             </motion.div>
             <motion.p
-              className="text-base font-display text-foreground mt-4 font-medium"
+              className="text-base font-display text-foreground mt-4 font-medium bg-white/90 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/50 shadow-lg"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.7 }}
