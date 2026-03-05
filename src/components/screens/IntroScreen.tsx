@@ -126,17 +126,16 @@ const IntroScreen = ({ onContinue }: IntroScreenProps) => {
           }}
         />
         
-        {/* Champy - Middle Right */}
+        {/* Champy - Top Center Left */}
         <motion.img
           src={champyImg}
           alt=""
-          className="absolute top-1/3 right-2 w-36 md:w-44 lg:w-52 drop-shadow-lg character-transparent"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0, y: [0, -6, 0] }}
+          className="absolute top-0 left-1/3 w-36 md:w-44 lg:w-52 drop-shadow-lg character-transparent"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ 
             opacity: { duration: 0.5, delay: 0.6 },
-            x: { duration: 0.5, delay: 0.6 },
-            y: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
+            y: { duration: 0.5, delay: 0.6 }
           }}
         />
       </div>
