@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
-import moooodLogoSvg from '@/assets/characters/Your paragraph text (5).svg';
+import moooodLogo from '@/assets/characters/mooood-logo.png';
 import { BackButton } from '@/components/ui/BackButton';
 
 interface CTAScreenProps {
@@ -77,7 +77,7 @@ const CTAScreen = ({ onBack }: CTAScreenProps) => {
             <span className="text-char-creative"> Club</span>.
             <br />
             Taste the
-            <img src={moooodLogoSvg} alt="MOOOOD" className="inline-block h-12 md:h-16 ml-2 align-middle" />!
+            <img src={moooodLogo} alt="MOOOOD" className="inline-block h-12 md:h-16 ml-2 align-middle" />!
           </h1>
 
           {/* Event Details */}
