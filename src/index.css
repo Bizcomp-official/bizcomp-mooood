@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Mondira Script font */
+@font-face {
+  font-family: 'Mondira Script';
+  src: url('./mondira_script/MondiraScript_PERSONAL_USE_ONLY.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Remove white background from character images */
 @layer utilities {
   .character-transparent {

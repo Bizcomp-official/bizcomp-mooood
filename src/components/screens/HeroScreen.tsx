@@ -163,13 +163,13 @@ const HeroScreen = ({ onStart }: HeroScreenProps) => {
       {/* Main content */}
       <div className="relative z-10 container mx-auto px-6 min-h-screen flex flex-col">
         {/* Header */}
-        <header className="pt-8 flex justify-center">
+        <header className="pt-6 flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-12 md:h-16" />
+            <img src={bizcompXMoooodLogo} alt="BIZCOMP × MOOOOD" className="h-16 md:h-20" />
           </motion.div>
         </header>
 

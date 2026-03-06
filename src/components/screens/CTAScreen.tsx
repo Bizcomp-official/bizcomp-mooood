@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
+import moooodLogoSvg from '@/assets/characters/Your paragraph text (5).svg';
 
 const CTAScreen = () => {
   const handleRegister = () => {
@@ -68,19 +69,19 @@ const CTAScreen = () => {
             <span className="text-char-creative"> Club</span>.
             <br />
             Taste the
-            <span style={{ color: '#e8662a', fontFamily: 'Anton, sans-serif', fontWeight: 400 }}> MOOOOD</span>!
+            <img src={moooodLogoSvg} alt="MOOOOD" className="inline-block h-12 md:h-16 ml-2 align-middle" />!
           </h1>
 
           {/* Event Details */}
           <div className="mb-8 space-y-2">
-            <p className="text-xl md:text-2xl font-display font-semibold text-foreground">
+            <p className="text-2xl md:text-4xl font-display font-semibold text-foreground">
               The RealBiz Exhibition
             </p>
             <p className="text-xl md:text-3xl font-display tracking-wide text-foreground/90 uppercase font-bold">
               WHERE <span className="text-char-creative">IDEAS</span> BECOME REAL <span style={{ color: '#e8662a' }}>BUSINESS</span>
             </p>
-            <p className="text-sm md:text-base font-body text-foreground/80 font-semibold">
-              29 March 2026 from 13:00–17:00 (GMT+7)
+            <p className="text-lg md:text-2xl font-display text-foreground font-semibold">
+              <span className="font-bold">29 March 2026</span> from 13:00–17:00
             </p>
             <p className="text-sm md:text-base font-body text-foreground/80 font-semibold">
               at Chamchuri 10 Building, 7th Floor, Room 701
@@ -89,14 +90,16 @@ const CTAScreen = () => {
         </motion.div>
 
         <motion.p
-          className="text-base font-body text-foreground/70 mb-8 max-w-2xl mx-auto leading-relaxed text-center"
+          className="text-base font-body text-foreground/70 mb-8 max-w-2xl mx-auto leading-relaxed text-center font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <span className="font-bold text-foreground/90">RealBiz Exhibition</span> is your chance to experience what <span className="font-bold text-foreground/90">real-world business</span> actually looks like. Organized under BizComp, the exhibition showcases the <span className="font-bold text-foreground/90">full journey of our project teams</span>: from idea generation and problem definition to solution development and <span className="font-bold text-foreground/90">real collaboration with an actual company partner, MOOOOD</span>.
+          <span className="font-bold text-foreground/90">RealBiz Exhibition</span> brings real business experiences to life.
+          <br />
+          Hosted by <span className="font-bold text-foreground/90">BizComp</span> in collaboration with <span className="font-bold text-foreground/90">MOOOOD</span>, the exhibition showcases how student teams transform ideas into real solutions through collaboration with an actual company partner.
           <br /><br />
-          At the exhibition, you'll get to know BizComp and MOOOOD more deeply, gain <span className="font-bold text-foreground/90">practical business insights</span> from real projects, and participate in <span className="font-bold text-foreground/90">fun, interactive activities</span> designed to challenge your thinking. If you're a high school or university student curious about <span className="font-bold text-foreground/90">entrepreneurship, innovation, or business competitions</span>, this is your opportunity to explore, learn, and imagine yourself as part of the journey.
+          Discover <span className="font-bold text-foreground/90">BizComp</span>, explore real projects, enjoy interactive activities, and attend a special sharing session with guest speakers sharing real insights from the world of entrepreneurship and business.
         </motion.p>
 
         <motion.div

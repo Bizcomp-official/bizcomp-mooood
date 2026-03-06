@@ -199,7 +199,7 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
             />
             {/* Secondary aura ring */}
             <motion.div 
-              className="absolute -inset-5 md:-inset-10 rounded-full blur-xl"
+              className="absolute -inset-1 md:-inset-2 rounded-full blur-sm"
               style={{ backgroundColor: styles.auraColor }}
               animate={{ 
                 scale: [1.1, 1, 1.1],
@@ -248,9 +248,8 @@ const ResultScreen = ({ result, onContinue }: ResultScreenProps) => {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             <div className="text-sm font-display tracking-widest text-foreground/70 uppercase mb-3 flex items-center justify-center gap-2">
-              <span>🍃 Your Perfect</span>
+              <span>Your Perfect</span>
               <img src={moooodLogo} alt="MOOOOD" className="inline-block h-6" />
-              <span>🍃</span>
             </div>
             <motion.div
               className="flex justify-center"
