@@ -2,8 +2,13 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
 import moooodLogoSvg from '@/assets/characters/Your paragraph text (5).svg';
+import { BackButton } from '@/components/ui/BackButton';
 
-const CTAScreen = () => {
+interface CTAScreenProps {
+  onBack?: () => void;
+}
+
+const CTAScreen = ({ onBack }: CTAScreenProps) => {
   const handleRegister = () => {
     // Open registration link or show registration form
     window.open('https://docs.google.com/forms/d/e/1FAIpQLSd63KQU86byUlR0apz7OrY5xsO3j2-D0EyC-wQpe__rfU5HjQ/viewform', '_blank');
@@ -11,6 +16,9 @@ const CTAScreen = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-soft-pink via-blush-pink to-coral-pink/40 relative overflow-hidden flex items-center justify-center">
+      {/* Back Button */}
+      {onBack && <BackButton onClick={onBack} />}
+      
       {/* Bizcomp-style decorative blobs */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Top right iridescent blob */}

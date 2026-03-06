@@ -160,7 +160,7 @@ const Index = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <IntroScreen onContinue={() => navigateTo('quiz')} />
+            <IntroScreen onContinue={() => navigateTo('quiz')} onBack={() => navigateTo('hero')} />
           </motion.div>
         )}
 
@@ -172,7 +172,7 @@ const Index = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <QuizScreen onComplete={handleQuizComplete} />
+            <QuizScreen onComplete={handleQuizComplete} onBack={() => navigateTo('intro')} />
           </motion.div>
         )}
 
@@ -196,7 +196,7 @@ const Index = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <CTAScreen />
+            <CTAScreen onBack={() => navigateTo('result')} />
           </motion.div>
         )}
       </AnimatePresence>

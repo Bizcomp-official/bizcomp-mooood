@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { BackButton } from '@/components/ui/BackButton';
 
 // Import transparent character SVGs
 import jollyImg from '@/assets/characters/jolly11.png';
@@ -10,11 +11,15 @@ import champyImg from '@/assets/characters/champy11.png';
 
 interface IntroScreenProps {
   onContinue: () => void;
+  onBack?: () => void;
 }
 
-const IntroScreen = ({ onContinue }: IntroScreenProps) => {
+const IntroScreen = ({ onContinue, onBack }: IntroScreenProps) => {
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-b from-background via-soft-pink/30 to-background">
+      {/* Back Button */}
+      {onBack && <BackButton onClick={onBack} />}
+      
       {/* Decorative geometric shapes - character colors */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Yellow circle - Jolly - top left */}

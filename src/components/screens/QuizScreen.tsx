@@ -1,9 +1,11 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion';
 import type { QuizAnswer, CharacterType } from '@/pages/Index';
+import { BackButton } from '@/components/ui/BackButton';
 
 interface QuizScreenProps {
   onComplete: (answers: QuizAnswer[]) => void;
+  onBack?: () => void;
 }
 
 interface QuizOption {
@@ -129,7 +131,7 @@ const questions: QuizQuestion[] = [
   },
 ];
 
-const QuizScreen = ({ onComplete }: QuizScreenProps) => {
+const QuizScreen = ({ onComplete, onBack }: QuizScreenProps) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -191,6 +193,9 @@ const QuizScreen = ({ onComplete }: QuizScreenProps) => {
 
   return (
     <div className="min-h-screen relative flex flex-col bg-gradient-to-b from-background via-soft-pink/20 to-background">
+      {/* Back Button */}
+      {onBack && <BackButton onClick={onBack} />}
+      
       {/* Decorative geometric shapes - character colors */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <LayoutGroup>
