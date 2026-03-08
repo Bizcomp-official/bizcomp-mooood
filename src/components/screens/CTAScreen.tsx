@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import bizcompXMoooodLogo from '@/assets/characters/bizcomp-mooood-logo.png';
 import moooodLogo from '@/assets/characters/mooood-logo.png';
+import muse11 from '@/assets/characters/muse11.png';
+import jolly from '@/assets/characters/jolly.png';
 import { BackButton } from '@/components/ui/BackButton';
 
 interface CTAScreenProps {
@@ -62,23 +64,72 @@ const CTAScreen = ({ onBack }: CTAScreenProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center max-w-xl">
+      <div className="relative z-10 container mx-auto px-6 text-center max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="relative"
         >
-          <p className="text-base font-display tracking-widest text-foreground/60 uppercase mb-4">
+          <p className="text-base font-display tracking-widest text-foreground/60 uppercase mb-2 mt-20">
             March Showcase
           </p>
           
-          <h1 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
-            Meet the
-            <span className="text-char-creative"> Club</span>.
-            <br />
-            Taste the
-            <img src={moooodLogo} alt="MOOOOD" className="inline-block h-10 md:h-12 ml-2 align-middle" />!
-          </h1>
+          <div className="relative flex items-center justify-center">
+            {/* Jolly Character on the left */}
+            <motion.img
+              src={jolly}
+              alt="Jolly"
+              className="absolute left-0 w-32 md:w-40 lg:w-48"
+              style={{ rotate: '15deg' }}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0,
+                y: [0, -10, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.3 },
+                x: { duration: 0.8, delay: 0.3 },
+                y: { 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }
+              }}
+            />
+            
+            <h1 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-6 leading-tight">
+              Meet the
+              <span className="text-char-creative"> Club</span>.
+              <br />
+              Taste the
+              <img src={moooodLogo} alt="MOOOOD" className="inline-block h-10 md:h-12 ml-2 align-middle" />!
+            </h1>
+            
+            {/* Muse Character on the right */}
+            <motion.img
+              src={muse11}
+              alt="Muse"
+              className="absolute right-0 w-32 md:w-40 lg:w-48"
+              style={{ rotate: '-15deg' }}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ 
+                opacity: 1, 
+                x: 0,
+                y: [0, -10, 0]
+              }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.3 },
+                x: { duration: 0.8, delay: 0.3 },
+                y: { 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }
+              }}
+            />
+          </div>
 
           {/* Event Details */}
           <div className="mb-8 space-y-2">
