@@ -145,6 +145,20 @@ const CTAScreen = ({ onBack }: CTAScreenProps) => {
             <p className="text-sm md:text-base font-body text-foreground/80 font-semibold">
               at Chamchuri 10 Building, 7th Floor, Room 701
             </p>
+            <div className="mt-4">
+              <a 
+                href="https://maps.app.goo.gl/642yr5FeeeMjh4XK9?g_st=ic" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-foreground/10 hover:bg-foreground/20 text-foreground font-semibold rounded-full transition-colors duration-200"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                View Map
+              </a>
+            </div>
           </div>
         </motion.div>
 
