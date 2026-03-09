@@ -4,9 +4,9 @@ import type { CharacterResult, CharacterType } from '@/pages/Index';
 
 // Import character GIFs
 import jollyImg from '@/assets/characters/Jolly.gif';
-import museImg from '@/assets/characters/Muse.gif';
-import serenyImg from '@/assets/characters/Sereny.gif';
-import zenImg from '@/assets/characters/Zen.gif';
+import museImg from '@/assets/characters/MUSE final.gif';
+import serenyImg from '@/assets/characters/SERENY final.gif';
+import zenImg from '@/assets/characters/zen FINAL.gif';
 import champyImg from '@/assets/characters/Champy.gif';
 
 // Import drink images

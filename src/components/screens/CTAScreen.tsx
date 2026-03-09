@@ -80,7 +80,7 @@ const CTAScreen = ({ onBack }: CTAScreenProps) => {
             <motion.img
               src={jolly}
               alt="Jolly"
-              className="absolute -left-24 md:-left-32 lg:-left-48 w-32 md:w-40 lg:w-48"
+              className="absolute -left-16 md:-left-20 lg:-left-32 w-32 md:w-40 lg:w-48"
               style={{ rotate: '15deg' }}
               initial={{ opacity: 0, x: -50 }}
               animate={{ 
@@ -111,7 +111,7 @@ const CTAScreen = ({ onBack }: CTAScreenProps) => {
             <motion.img
               src={muse11}
               alt="Muse"
-              className="absolute -right-24 md:-right-32 lg:-right-48 w-32 md:w-40 lg:w-48"
+              className="absolute -right-16 md:-right-20 lg:-right-32 w-32 md:w-40 lg:w-48"
               style={{ rotate: '-15deg' }}
               initial={{ opacity: 0, x: 50 }}
               animate={{ 
